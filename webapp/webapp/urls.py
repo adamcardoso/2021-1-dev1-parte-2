@@ -18,6 +18,10 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('pedidos/', include('orders.urls', namespace='orders')),
+    path('produtos/', include('products.urls', namespace='products')),
+    path('categorias/', include('categories.urls', namespace='categories')),
+    path('redessociais/', include('socialnetworks.urls', namespace='socialnetworks')),
     path('clientes/', include('clients.urls', namespace='clients')),
     path('', include('core.urls', namespace = 'core')),
 ]
