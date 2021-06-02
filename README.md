@@ -19,13 +19,15 @@
 
 <p>
     Grupo 1: Sistema unificado de vacinação
+    <br>
         |- Autenticação (Perfil de atendente e perfil de carteira de vacinação)|
+    <br>    
         |- Pessoas|
+    <br>
         |- Postos de vacinação|
+    <br>
         |- Profissionais|
+    <br>
         |- Vacinas|
 </p>
-     <td>
-        
-     </td>
    
