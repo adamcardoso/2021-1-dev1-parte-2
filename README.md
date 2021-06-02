@@ -16,4 +16,13 @@
 <p>
     Este projeto foi desenvolvido com a IDE: <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
 </p>
+
+<p>
+    Grupo 1: Sistema unificado de vacinação
+        - Autenticação (Perfil de atendente e perfil de carteira de vacinação)
+        - Pessoas
+        - Postos de vacinação
+        - Profissionais
+        - Vacinas
+</p>
    
