@@ -25,7 +25,6 @@ def add_user(request):
     context['form'] = form
     return render(request, template_name, context)
 
-@login_required(login_url='/contas/login/')
 def user_login(request):
     template_name = 'accounts/user_login.html'
     if request.method =='POST':
