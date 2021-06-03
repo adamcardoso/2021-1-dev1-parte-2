@@ -9,7 +9,8 @@ def add_product(request):
     template_name = 'products/add_product.html'
     context = {}
     if request.method == 'POST':
-        form = ProductForm(request.POST)
+        # form = ProductForm(request.POST)
+        form = ProductForm(request.POST, request.FILES)  # Substituido
         if form.is_valid():
             f = form.save(commit=False)
             f.save()
@@ -32,7 +33,8 @@ def edit_product(request, id_product):
     context ={}
     product = get_object_or_404(Product, id=id_product)
     if request.method == 'POST':
-        form = ProductForm(request.POST, instance=product)
+        # form = ProductForm(request.POST, instance=product)
+        form = ProductForm(request.POST, request.FILES,  instance=product) # Substituido
         if form.is_valid():
             form.save()
             return redirect('products:list_products')

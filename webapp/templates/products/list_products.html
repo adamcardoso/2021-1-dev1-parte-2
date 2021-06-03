@@ -26,6 +26,12 @@ Lista de Produtos - {{ block.super }}
                         <th scope="col">Data de fabricacao</th>
                         <th scope="col">Ativo</th>
                         <th scope="col">Categoria</th>
+                        <!-- Adicionado INICIO -->
+                        <th scope="col">Foto</th>
+                        <th scope="col">Documento</th>
+                        <!-- Adicionado FIM -->
+                        <th scope="col"></th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,9 +50,19 @@ Lista de Produtos - {{ block.super }}
                             {% endif %}
                         </td>
                         <td>{{ product.category }}</td>
+                        <!-- Adicionado INICIO -->
+                        <td>
+                            <img src="{{ product.photo.url }}" width="50" height="50">
+                        </td>
+                        <td>
+                            <a href="{{ product.doc.url }}">{{ product.doc.url }}</a>
+                        </td>
+                        <!-- Adicionado FIM -->
                         <td>
                             <a href="{% url 'products:edit_product' product.id %}"
                                 class="btn btn-primary btn-sm">Editar</a>
+                        </td>
+                        <td>
                             <a href="{% url 'products:delete_product' product.id %}"
                                 class="btn btn-danger btn-sm ">Excluir</a>
                         </td>
