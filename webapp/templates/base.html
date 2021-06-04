@@ -3,15 +3,17 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
     <!-- Estilização -->
     <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/select2.min.css' %}">
 
+    <link href="starter-template.css" rel="stylesheet">
     <!-- Título -->
     <title>{% block title %}Web App{% endblock title %}</title>
 </head>
@@ -62,6 +64,7 @@
     {% endif %}
     <!-- FIM: Bloco do Bootstrap a ser incluido -->
     {% block body %}
+
     {% endblock body %}
     <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
     <script src="{% static 'js/jquery-ui.js' %}"></script>
