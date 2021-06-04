@@ -46,6 +46,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
+    'clients.apps.ClientsConfig',
+    'widget_tweaks',
+    'socialnetworks.apps.SocialnetworksConfig',
+    'categories.apps.CategoriesConfig',
+    'products.apps.ProductsConfig',
+    'orders.apps.OrdersConfig',
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
